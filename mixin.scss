@@ -1,0 +1,73 @@
+@mixin btn {
+  border: 1px solid #FF8924;
+  border-radius: 20px;;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: transparent;
+  transition: .4s;
+  &:hover {
+    background: rgba(255, 255, 0, 0.46);
+    border: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+@mixin btn2 {
+  padding: 20px 40px;
+  background: linear-gradient(87.05deg, #DC6B30 17.99%, #E4864F 49.64%, #FFBE82 72.7%, #E49031 93.02%);;
+  box-shadow: 0 3px 49px -3px rgba(226, 128, 72, 0.76), inset 0px -4px 0px #8F4119;;
+  border-radius: 20px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition:.4s;
+  &:hover {
+    background: transparent;
+    border: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+}
+
+@mixin df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin df1{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin column{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
